@@ -146,23 +146,37 @@ public class Servlet04 extends GenericServlet {
 // 웹 브라우저가 데이터를 전송할 때 다음과 같은 형식으로 보낸다.
 // 요청 프로토콜에서 Content-Type을 확인하라.
 //
-/*
- * POST /java-web/ex04/s4 HTTP/1.1 Host: 192.168.0.4:8080 Content-Length: 7222 Pragma: no-cache
- * Cache-Control: no-cache Origin: http://192.168.0.4:8080 Upgrade-Insecure-Requests: 1
- * Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryzVY11GiqDpSP3H8f User-Agent:
- * Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko)
- * Chrome/73.0.3683.86 Safari/537.36 Accept:
- * text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng, Referer:
- * http://192.168.0.4:8080/java-web/ex04/test04.html Accept-Encoding: gzip, deflate Accept-Language:
- * ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7,la;q=0.6 Connection: keep-alive 빈 줄
- * ------WebKitFormBoundaryzVY11GiqDpSP3H8f Content-Disposition: form-data; name="name"
- *
- * 홍길동 ------WebKitFormBoundaryzVY11GiqDpSP3H8f Content-Disposition: form-data; name="age"
- *
- * 20 ------WebKitFormBoundaryzVY11GiqDpSP3H8f Content-Disposition: form-data; name="photo";
- * filename="images.jpeg" Content-Type: image/jpeg
- *
- * 바이너리 데이터.... ------WebKitFormBoundaryzVY11GiqDpSP3H8f--
- */
+// POST /eomcs-java-web/ex04/s4 HTTP/1.1
+// Host: 192.168.1.10:9999
+// Content-Length: 248900
+// Pragma: no-cache
+// Cache-Control: no-cache
+// Origin: http://192.168.1.10:9999
+// Upgrade-Insecure-Requests: 1
+// Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryT1G23U6fYMK0zZxx
+// User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like
+// Gecko) Chrome/80.0.3987.149 Safari/537.36
+// Accept:
+// text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+// Referer: http://192.168.1.10:9999/eomcs-java-web/ex04/test03.html
+// Accept-Encoding: gzip, deflate
+// Accept-Language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7,la;q=0.6,cs;q=0.5
+// Connection: keep-alive
+//
+// ------WebKitFormBoundaryT1G23U6fYMK0zZxx
+// Content-Disposition: form-data; name="name"
+//
+// AB가각
+// ------WebKitFormBoundaryT1G23U6fYMK0zZxx
+// Content-Disposition: form-data; name="age"
+//
+// 20
+// ------WebKitFormBoundaryT1G23U6fYMK0zZxx
+// Content-Disposition: form-data; name="photo"; filename="actors.jpg"
+// Content-Type: image/jpeg
+//
+// 바이너리데이터...
+// ------WebKitFormBoundaryT1G23U6fYMK0zZxx--
+
 
 
